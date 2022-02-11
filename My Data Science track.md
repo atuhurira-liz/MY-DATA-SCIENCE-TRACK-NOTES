@@ -39,8 +39,11 @@ Similar functions such as int(), float() and bool() will help you convert Python
  correcting a wrong code using PYTHON
 
  # Definition of savings and result
+ ```
 savings = 100
 result = 100 * 1.10 ** 7
+
+```
 
 # Fix the printout
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
