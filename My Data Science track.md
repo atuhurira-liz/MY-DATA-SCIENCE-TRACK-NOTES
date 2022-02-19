@@ -57,10 +57,10 @@ print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 pi_string = "3.1415926"
 
 ```
-####Convert pi_string into float: pi_float####
+#### Convert pi_string into float: pi_float ####
 
-**ANSWER**
-THE CORRECT CODE
+ANSWER
+
 **Definition of savings and result**
 ```
 savings = 100
@@ -89,28 +89,30 @@ Create a list, areas, that contains the area of the hallway (hall), kitchen (kit
 Print areas with the print() function.
 
 EXAMPLE
-# Area variables (in square meters)
+**Area variables (in square meters)**
+```
 hall = 11.25
 kit = 18.0
 liv = 20.0
 bed = 10.75
 bath = 9.50
 
-# Create list areas
+```
+**Create list areas**
 ```
 areas = [hall, kit, liv, bed, bath]
 
 ```
-# Print areas
+**Print areas**
 ```
 print(areas)
 [11.25, 18.0, 20.0, 10.75, 9.5]
 
 ```
-# Create list with different types #
+### Create list with different types ###
 A list can contain any Python type. Although it's not really common, a list can also contain a mix of Python types including strings, floats, booleans, etc.
 
-# area variables (in square meters)
+**area variables (in square meters)**
 ```
 hall = 11.25
 kit = 18.0
@@ -119,7 +121,7 @@ bed = 10.75
 bath = 9.50
 
 ```
-# Adapt list areas
+**Adapt list areas**
 ```
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
@@ -131,6 +133,7 @@ Print areas again; is the printout more informative this time?
 
 # SOLUTION #
 Area variables (in square meters)
+
 ```
 hall = 11.25
 kit = 18.0
@@ -139,19 +142,25 @@ bed = 10.75
 bath = 9.50
 
 ```
-# Adapt list areas
+**Adapt list areas**
+```
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
-# Print areas
+```
+#### Print areas ####
+```
 print(areas)
 ['hallway', 11.25, 'kitchen', 18.0, 'living room', 20.0, 'bedroom', 10.75, 'bathroom', 9.5]
 
-# List of lists
+```
+
+**List of lists**
+
 As a data scientist, you'll often be dealing with a lot of data, and it will make sense to group some of this data.
 
 Instead of creating a flat list containing strings and floats, representing the names and areas of the rooms in your house, you can create a list of lists. The script in the editor can already give you an idea.
 
-# area variables (in square meters)
+**area variables (in square meters)**
 ```
 hall = 11.25
 kit = 18.0
@@ -161,7 +170,7 @@ bath = 9.50
 
 ```
 
-# house information as list of lists
+**house information as list of lists**
 ```
 house = [["hallway", hall],
          ["kitchen", kit],
@@ -171,17 +180,17 @@ house = [["hallway", hall],
          
 ```         
 
-# Print out house
+Print out house
 ```
 print(house)
 
 ```
-# SOLUTION #
+#### SOLUTION ####
 ```
 [['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0], ['bedroom', 10.75], ['bathroom', 9.5]]
 
 ```
-# Print out the type of house
+Print out the type of house
 ```
 print(type(house))
 
@@ -189,8 +198,10 @@ print(type(house))
 <class 'list'>
 
 ```
-# Subset and conquer
+**Subset and conquer**
+
 Subsetting Python lists is a piece of cake. Take the code sample below, which creates a list x and then selects "b" from it. Remember that this is the second element, so it has index 1. You can also use negative indexing.
+
 ```
 x = ["a", "b", "c", "d"]
 x[1]
@@ -201,7 +212,7 @@ x[-3] # same result!
 
 # EXAMPLE #
 
-# Create the areas list
+**Create the areas list**
 ```
 areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
 
@@ -224,42 +235,55 @@ print(areas[-1])
 print(areas[5])
 
 
-# RESULT #
+#### RESULT ####
 11.25
 9.5
 20.0
 
 # Subset and calculate #
 After you've extracted values from a list, you can use them to perform additional calculations. Take this example, where the second and fourth element of a list x are extracted. The strings that result are pasted together using the + operator:
+```
 
 x = ["a", "b", "c", "d"]
 print(x[1] + x[3])
 
-# Create the areas list
+```
+
+**Create the areas list**
+```
 areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
 
+```
 # Sum of kitchen and bedroom area: eat_sleep_area
 
 
 # Print the variable eat_sleep_area
 
 # solution #
-# Sum of kitchen and bedroom area: eat_sleep_area
+**Sum of kitchen and bedroom area: eat_sleep_area**
+``
 eat_sleep_area = areas[3] + areas[-3]
 
+```
 # Print the variable eat_sleep_area
+```
 print(eat_sleep_area)
 
+```
 # Slicing and dicing #
 Selecting single values from a list is just one part of the story. It's also possible to slice your list, which means selecting multiple elements from your list. Use the following syntax:
 
 my_list[start:end]
 The start index will be included, while the end index is not.
 
-The code sample below shows an example. A list with "b" and "c", corresponding to indexes 1 and 2, are selected from a list x:
+The code sample below shows an example.
+```
+A list with "b" and "c", corresponding to indexes 1 and 2, are selected from a list x:
 
 x = ["a", "b", "c", "d"]
 x[1:3]
+
+```
 The elements with index 1 and 2 are included, while the element with index 3 is not.
 
 Use slicing to create a list, downstairs, that contains the first 6 elements of areas.
