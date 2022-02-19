@@ -23,7 +23,7 @@ To find out the type of a value or a variable that refers to that value, you can
 type(a)
  And this would be a string.
 
- ** Type conversion ** 
+ **Type conversion** 
 Using the + operator to paste together two strings can be very useful in building custom messages.
 
 Suppose, for example, that you've calculated the return of your investment and want to summarize the results in a string. Assuming the integer savings and float result are defined, you can try something like this:
@@ -38,14 +38,14 @@ Similar functions such as int(), float() and bool() will help you convert Python
 
  correcting a wrong code using PYTHON
 
- # Definition of savings and result
+ **Definition of savings and result
  ```
 savings = 100
 result = 100 * 1.10 ** 7
 
 ```
 
-# Fix the printout
+**Fix the printout
 ```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 
