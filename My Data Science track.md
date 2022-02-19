@@ -46,27 +46,39 @@ result = 100 * 1.10 ** 7
 ```
 
 # Fix the printout
+```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 
+```
 # Definition of pi_string
+```
 pi_string = "3.1415926"
 
+```
 # Convert pi_string into float: pi_float
 
 ## ANSWER ## THE CORRECT CODE
 # Definition of savings and result
+```
 savings = 100
 result = 100 * 1.10 ** 7
 
+```
 # Fix the printout
+```
 print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
 
+```
 # Definition of pi_string
+```
 pi_string = "3.1415926"
 
+```
 # Convert pi_string into float: pi_float
+```
 pi_float = float(pi_string)
 
+```
 # LISTS#
 A list is a way to give a single name to a collection of values.
 
@@ -82,38 +94,48 @@ bed = 10.75
 bath = 9.50
 
 # Create list areas
+```
 areas = [hall, kit, liv, bed, bath]
 
+```
 # Print areas
+```
 print(areas)
 [11.25, 18.0, 20.0, 10.75, 9.5]
 
+```
 # Create list with different types #
 A list can contain any Python type. Although it's not really common, a list can also contain a mix of Python types including strings, floats, booleans, etc.
 
 # area variables (in square meters)
+```
 hall = 11.25
 kit = 18.0
 liv = 20.0
 bed = 10.75
 bath = 9.50
 
+```
 # Adapt list areas
+```
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
+```
 The code in the editor is the start of a solution. For some of the areas, the name of the corresponding room is already placed in front. Pay attention here! "bathroom" is a string, while "bath" is a variable that represents the float 9.50 you specified earlier.
 
 Finish the code that creates the areas list. Build the list so that the list first contains the name of each room as a string and then its area. In other words, add the strings "hallway", "kitchen" and "bedroom" at the appropriate locations.
 Print areas again; is the printout more informative this time?
 
 # SOLUTION #
-# area variables (in square meters)
+Area variables (in square meters)
+```
 hall = 11.25
 kit = 18.0
 liv = 20.0
 bed = 10.75
 bath = 9.50
 
+```
 # Adapt list areas
 areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
@@ -127,58 +149,74 @@ As a data scientist, you'll often be dealing with a lot of data, and it will mak
 Instead of creating a flat list containing strings and floats, representing the names and areas of the rooms in your house, you can create a list of lists. The script in the editor can already give you an idea.
 
 # area variables (in square meters)
+```
 hall = 11.25
 kit = 18.0
 liv = 20.0
 bed = 10.75
 bath = 9.50
 
+```
+
 # house information as list of lists
+```
 house = [["hallway", hall],
          ["kitchen", kit],
          ["living room", liv],
          ["bedroom", bed],
          ["bathroom", bath]]
+         
+```         
 
 # Print out house
+```
 print(house)
 
+```
 # SOLUTION #
-
+```
 [['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0], ['bedroom', 10.75], ['bathroom', 9.5]]
 
+```
 # Print out the type of house
+```
 print(type(house))
 
 [['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0], ['bedroom', 10.75], ['bathroom', 9.5]]
 <class 'list'>
 
-
-# solution
-
+```
 # Subset and conquer
 Subsetting Python lists is a piece of cake. Take the code sample below, which creates a list x and then selects "b" from it. Remember that this is the second element, so it has index 1. You can also use negative indexing.
-
+```
 x = ["a", "b", "c", "d"]
 x[1]
 x[-3] # same result!
-Remember the areas list from before, containing both strings and floats? Its definition is already in the script. Can you add the correct code to do some Python subsetting?
+
+```
+** Remember the areas list from before, containing both strings and floats? Its definition is already in the script. Can you add the correct code to do some Python subsetting?***
 
 # EXAMPLE #
 
 # Create the areas list
+```
 areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
 
+```
 Print out the second element from the areas list (it has the value 11.25).
 Subset and print out the last element of areas, being 9.50. Using a negative index makes sense here!
 Select the number representing the area of the living room (20.0) and print it out.
 
 # Print out second element from areas
+```
 print(areas[1])
 
+```
 # Print out last element from areas
+```
 print(areas[-1])
 
+```
 # Print out the area of the living room
 print(areas[5])
 
