@@ -17,7 +17,7 @@ str, or string: a type to represent text. You can use single or double quotes to
 
 bool, or boolean: a type to represent logical values. Can only be True or False (the capitalization is important!).
 
-# TYPES OF VALUES OR VARIABLES #
+#### TYPES OF VALUES OR VARIABLES ####
 To find out the type of a value or a variable that refers to that value, you can use the type() function. Suppose you've defined a variable a, but you forgot the type of this variable. To determine the type of a, simply execute:
 
 type(a)
