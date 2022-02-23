@@ -253,24 +253,22 @@ print(x[1] + x[3])
 **Create the areas list**
 ```
 areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
-
 ```
+
 **Sum of kitchen and bedroom area: eat_sleep_area**
-
-
 **Print the variable eat_sleep_area**
-
-**solution**
-
-**Sum of kitchen and bedroom area: eat_sleep_area**
-``
+```
 eat_sleep_area = areas[3] + areas[-3]
-
-```
-**Print the variable eat_sleep_area**
-```
 print(eat_sleep_area)
 
+```
+**solution**
+```
+28.75
+
+<script.py> output:
+    28.75
+    
 ```
 ### Slicing and dicing ###
 Selecting single values from a list is just one part of the story. It's also possible to slice your list, which means selecting multiple elements from your list. Use the following syntax:
