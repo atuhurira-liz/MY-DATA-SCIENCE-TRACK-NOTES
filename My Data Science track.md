@@ -31,6 +31,9 @@ Suppose, for example, that you've calculated the return of your investment and w
 ```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 
+# MANIPULATING LISTS #
+
+
 ```
 This will not work, though, as you cannot simply sum strings and integers/floats.
 
