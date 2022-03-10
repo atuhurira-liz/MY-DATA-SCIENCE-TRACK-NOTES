@@ -31,9 +31,6 @@ Suppose, for example, that you've calculated the return of your investment and w
 ```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 
-# MANIPULATING LISTS #
-
-
 ```
 This will not work, though, as you cannot simply sum strings and integers/floats.
 
@@ -44,13 +41,15 @@ Similar functions such as int(), float() and bool() will help you convert Python
  correcting a wrong code using PYTHON
 
  **Definition of savings and result**
+ 
  ```
 savings = 100
 result = 100 * 1.10 ** 7
 
 ```
 
-**Fix the printout
+**Fix the printout**
+
 ```
 print("I started with $" + savings + " and now have $" + result + ". Awesome!")
 
@@ -321,3 +320,51 @@ print(upstairs)
 Answer
 ['hallway', 11.25, 'kitchen', 18.0, 'living room', 20.0]
 ['bedroom', 10.75, 'bathroom', 9.5]
+
+# MANIPULATING LISTS #
+
+Replace list elements
+Replacing list elements is pretty easy. Simply subset the list and assign new values to the subset. You can select single elements or you can change entire list slices at once.
+
+Use the IPython Shell to experiment with the commands below. Can you tell what's happening and why?
+
+```
+x = ["a", "b", "c", "d"]
+x[1] = "r"
+x[2:] = ["s", "t"]
+
+```
+For this and the following exercises, you'll continue working on the areas list that contains the names and areas of different rooms in a house.
+
+```
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+```
+Update the area of the bathroom area to be 10.50 square meters instead of 9.50.
+
+ANSWER
+```
+areas[9] = 10.50
+
+```
+Make the areas list more trendy! Change "living room" to "chill zone".
+```
+areas[4] = "chill zone"
+
+```
+
+***Extend a list***
+If you can change elements in a list, you sure want to be able to add elements to it, right? You can use the + operator:
+
+```
+x = ["a", "b", "c", "d"]
+y = x + ["e", "f"]
+```
+```
+areas = ["hallway", 11.25, "kitchen", 18.0, "chill zone", 20.0,
+         "bedroom", 10.75, "bathroom", 10.50]
+```
+### PRACTICE ###
+Use the + operator to paste the list ["poolhouse", 24.5] to the end of the areas list. Store the resulting list as areas_1.
+
+Further extend areas_1 by adding data on your garage. Add the string "garage" and float 15.45. Name the resulting list areas_2.
+
