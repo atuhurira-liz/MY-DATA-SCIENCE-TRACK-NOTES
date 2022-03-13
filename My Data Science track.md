@@ -415,7 +415,7 @@ command2
 
 #### Familiar functions ####
 
-Out of the box, Python offers a bunch of built-in functions to make your life as a data scientist easier. You already know two such functions: ``` print() ``` and ``` type() ```. You've also used the functions ``` str() ```, ``` int() ```, ```` bool() ``` and ``` float() ``` to switch between data types. These are built-in functions as well.
+Out of the box, Python offers a bunch of built-in functions to make your life as a data scientist easier. You already know two such functions: ``` print() ``` and ``` type() ```. You've also used the functions ``` str() ```, ``` int() ```, ``` bool() ``` and ``` float() ``` to switch between data types. These are built-in functions as well.
 
 Calling a function is easy. To get the type of ``` 3.0 ``` and store the output as a new variable, result, you can use the following:
 
@@ -430,28 +430,28 @@ The general recipe for calling functions and saving the result to a variable is 
 ```
 var1 = [1, 2, 3, 4]
 var2 = True
+```
 
 Use ``` print() ``` in combination with ``` type() ``` to print out the type of var1.
 
 ```
 print(type(var1))
-
 ```
+
 Use ``` len() ``` to get the length of the list ``` var1 ```. Wrap it in a ``` print() ``` call to directly print it out.
 
 ```
 print(len(var1))
-
 ```
 
 Use ``` int() ``` to convert ``` var2 ``` to an integer. Store the output as ``` out2. ```
 
 ```
 out2 = int(var2)
-
 ```
 
 ### Help! ###
+
 Maybe you already know the name of a Python function, but you still have to figure out how to use it. Ironically, you have to ask for information about a function with another function: ``` help(). ``` In IPython specifically, you can also use ``` ? ``` before the function name.
 
 To get help on the ``` max() ``` function, for example, you can use one of these calls:
@@ -461,6 +461,7 @@ help(max)
 ?max
 
 ```
+
 **Multiple arguments**
 
 In the previous exercise, you identified optional arguments by viewing the documentation with ``` help().``` You'll now apply this to change the behavior of the ``` sorted() ``` function.
@@ -478,4 +479,4 @@ sorted(____, reverse=____)
 
 ```
 
-***Note***: For now, we can understand an ***iterable*** as being any collection of objects, e.g., a List.
+**Note**: For now, we can understand an ***iterable*** as being any collection of objects, e.g., a List.
