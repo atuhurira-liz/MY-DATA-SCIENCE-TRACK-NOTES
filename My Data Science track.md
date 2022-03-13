@@ -404,10 +404,10 @@ There was a mistake! The amount you won with the lottery is not that big after a
 The ``` ; ```sign is used to place commands on the same line. The following two code chunks are equivalent:
 
 ```
-# Same line
+Same line
 command1; command2
 
-# Separate lines
+Separate lines
 command1
 command2
 ```
@@ -424,3 +424,58 @@ Calling a function is easy. To get the type of ``` 3.0 ``` and store the output 
 The general recipe for calling functions and saving the result to a variable is thus:
 
 ``` output = function_name(input) ```
+
+**EXAMPLE**
+
+```
+var1 = [1, 2, 3, 4]
+var2 = True
+
+Use ``` print() ``` in combination with ``` type() ``` to print out the type of var1.
+
+```
+print(type(var1))
+
+```
+Use ``` len() ``` to get the length of the list ``` var1 ```. Wrap it in a ``` print() ``` call to directly print it out.
+
+```
+print(len(var1))
+
+```
+
+Use ``` int() ``` to convert ``` var2 ``` to an integer. Store the output as ``` out2. ```
+
+```
+out2 = int(var2)
+
+```
+
+### Help! ###
+Maybe you already know the name of a Python function, but you still have to figure out how to use it. Ironically, you have to ask for information about a function with another function: ``` help(). ``` In IPython specifically, you can also use ``` ? ``` before the function name.
+
+To get help on the ``` max() ``` function, for example, you can use one of these calls:
+
+```
+help(max)
+?max
+
+```
+**Multiple arguments**
+
+In the previous exercise, you identified optional arguments by viewing the documentation with ``` help().``` You'll now apply this to change the behavior of the ``` sorted() ``` function.
+
+Have a look at the documentation of ``` sorted() ``` by typing ``` help(sorted) ``` in the IPython Shell.
+
+You'll see that ``` sorted() ``` takes three arguments: ``` iterable ```, ``` key ```, and ``` reverse. ```
+
+``` key=None ``` means that if you don't specify the ``` key ``` argument, it will be ``` None.``` ```reverse=False ``` means that if you don't specify the ``` reverse ``` argument, it will be ``` False ```, by default.
+
+In this exercise, you'll only have to specify ``` iterable ``` and ``` reverse ```, not ``` key ```. The first input you pass to ``` sorted() ``` will be matched to the ``` iterable ``` argument, but what about the second input? To tell Python you want to specify ``` reverse ``` without changing anything about ``` key ```, you can use ``` = ``` to assign it a new value:
+
+```
+sorted(____, reverse=____)
+
+```
+
+***Note***: For now, we can understand an ***iterable*** as being any collection of objects, e.g., a List.
